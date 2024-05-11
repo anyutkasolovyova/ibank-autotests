@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ibank-autotests"
+version = "0.1.0"
+description = ""
+authors = ["annasoloveva <anyutkasolovyova@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
