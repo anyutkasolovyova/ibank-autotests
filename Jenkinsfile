@@ -1,15 +1,21 @@
 pipeline {
-  agent {
-    docker {
-      image 'python:3.12.3'
-    }
-  }
+    agent any
 
-  stages {
-    stage ('Test') {
-      steps {
-        sh 'python --version'
-      }
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
     }
-  }
 }
